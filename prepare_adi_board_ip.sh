@@ -28,8 +28,9 @@ elif [ "$BOARD_NAME" == "zc702_fmcs2" ]; then
     ADI_PROJECT_DIR=./adi-hdl/projects/fmcomms2/zc702/
 elif [ "$BOARD_NAME" == "zed_fmcs2" ]; then
     ADI_PROJECT_DIR=./adi-hdl/projects/fmcomms2/zed/
-elif [ "$BOARD_NAME" == "adrv9361z7035" ]; then
-    ADI_PROJECT_DIR=./adi-hdl/projects/adrv9361z7035/ccbob_lvds/
+elif [ "$BOARD_NAME" == "adrv9361z7035" ]; then 
+	#MODIFIED
+    ADI_PROJECT_DIR=./adi-hdl/projects/adrv9361z7035/ccbob_cmos/
 #elif [ "$BOARD_NAME" == "adrv9361z7035_fmc" ]; then
 #    ADI_PROJECT_DIR=./adi-hdl/projects/adrv9361z7035/ccfmc_lvds/
 elif [ "$BOARD_NAME" == "adrv9364z7020" ]; then
