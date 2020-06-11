@@ -305,10 +305,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_sys_rstgen_0 || ORIG_REF_NAME==system_sys_rstgen_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc
-
-# XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_0/system_xbar_0_ooc.xdc
-
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_ad9361_0 || ORIG_REF_NAME==system_axi_ad9361_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
@@ -415,12 +411,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0_clocks.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_dma_1_0 || ORIG_REF_NAME==system_axi_dma_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_1/system_xbar_1_ooc.xdc
-
-# XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_2/system_xbar_2_ooc.xdc
-
-# XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_3/system_xbar_3_ooc.xdc
-
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_openofdm_rx_0_0/src/deinter_lut/deinter_lut_ooc.xdc
 
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_openofdm_rx_0_0/src/rot_lut/rot_lut_ooc.xdc
@@ -432,8 +422,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_sys_rstgen1_0 || ORIG_REF_NAME==system_sys_rstgen1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0_ooc.xdc
 
 # XDC: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/fifo8_1clk_dep64_fifo_generator_0_0/fifo8_1clk_dep64_fifo_generator_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo8_1clk_dep64_fifo_generator_0_0 || ORIG_REF_NAME==fifo8_1clk_dep64_fifo_generator_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet

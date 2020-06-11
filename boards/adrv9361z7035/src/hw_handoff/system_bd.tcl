@@ -58,7 +58,7 @@ set run_remote_bd_flow 1
 if { $run_remote_bd_flow == 1 } {
   # Set the reference directory for source file relative paths (by default 
   # the value is script directory path)
-  set origin_dir ./src
+  set origin_dir ./workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src
 
   # Use origin directory path location variable, if specified in the tcl shell
   if { [info exists ::origin_dir_loc] } {
@@ -236,7 +236,7 @@ proc create_hier_cell_openwifi_ip { parentCell nameHier } {
   set openofdm_tx_0 [ create_bd_cell -type ip -vlnv user.org:user:openofdm_tx:1.0 openofdm_tx_0 ]
 
   # Create instance: rx_intf_0, and set properties
-  set rx_intf_0 [ create_bd_cell -type ip -vlnv user.org:user:rx_intf:1.0 rx_intf_0 ]
+  set rx_intf_0 [ create_bd_cell -type ip -vlnv user.org:user:rx_intf:1.1 rx_intf_0 ]
 
   # Create instance: sys_rstgen1, and set properties
   set sys_rstgen1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 sys_rstgen1 ]

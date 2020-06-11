@@ -38,6 +38,10 @@
 	    // Ports to openofdm rx
         output wire [(2*IQ_DATA_WIDTH-1) : 0] sample,
 	    output wire sample_strobe,
+	    /*ADDED*/
+        output wire [(2*IQ_DATA_WIDTH-1) : 0] sample_2,
+        output wire sample_strobe_2,
+	    /**/
         input  wire pkt_header_valid,
         input  wire pkt_header_valid_strobe,
         input  wire ht_unsupport,
@@ -162,16 +166,30 @@
 
     wire [(IQ_DATA_WIDTH-1) : 0] rf_i_to_acc;
 	wire [(IQ_DATA_WIDTH-1) : 0] rf_q_to_acc;
+	
+	/*ADDED*/
+	wire [(IQ_DATA_WIDTH-1) : 0] rf_i_to_acc_2;
+	wire [(IQ_DATA_WIDTH-1) : 0] rf_q_to_acc_2;
+	/**/
     
 	wire [(IQ_DATA_WIDTH-1):0] bw20_i0;
     wire [(IQ_DATA_WIDTH-1):0] bw20_q0;
     wire bw20_iq_valid;
+    
+    /*ADDED*/
+    wire [(IQ_DATA_WIDTH-1):0] bw20_i1;
+    wire [(IQ_DATA_WIDTH-1):0] bw20_q1;
+    wire bw20_iq1_valid;
+    /**/ 
         
     wire [(C_S00_AXIS_TDATA_WIDTH-1):0] s_axis_data_to_acc;
     wire s_axis_emptyn_to_acc;
     wire [(MAX_BIT_NUM_DMA_SYMBOL-1) : 0] s_axis_fifo_data_count;
     
     wire [(2*IQ_DATA_WIDTH-1) : 0] rf_iq_loopback;
+    /*ADDED*/
+    wire [(2*IQ_DATA_WIDTH-1) : 0] rf_iq_loopback_2;
+    /**/
     
 	wire start_1trans_from_acc_to_m_axis;
     wire [(C_M00_AXIS_TDATA_WIDTH-1):0] data_from_acc_to_m_axis;
@@ -193,12 +211,16 @@
     wire m_axis_auto_rst;
     wire m_axis_rst;
     wire enable_m_axis_auto_rst;
-    
-    wire ant_flag_in_rf_domain;
+    /*MODIFIED: [1:0]*/
+    wire [1:0] ant_flag_in_rf_domain;
+    /**/
     wire mute_adc_out_to_bb_in_rf_domain;
     wire [(2*IQ_DATA_WIDTH-1) : 0] adc_data_internal;
     wire [(2*IQ_DATA_WIDTH-1) : 0] adc_data_after_sel;
-
+	/*ADDED*/
+	wire [(2*IQ_DATA_WIDTH-1) : 0] adc_data_internal_2;
+    wire [(2*IQ_DATA_WIDTH-1) : 0] adc_data_after_sel_2;
+	/**/
     wire [(C_M00_AXIS_TDATA_WIDTH-1) : 0] data_from_acc;
 	wire data_ready_from_acc;
 
@@ -216,6 +238,9 @@
     // -------------debug purpose----------------
 
     assign sample = {rf_i_to_acc,rf_q_to_acc};
+    /*ADDED*/
+    assign sample_2 = {rf_i_to_acc_2,rf_q_to_acc_2};
+    /**/
     assign fcs_valid = (fcs_in_strobe&fcs_ok);
     assign fcs_invalid = (fcs_in_strobe&(~fcs_ok));
     assign sig_valid = (pkt_header_valid_strobe&pkt_header_valid);
@@ -242,9 +267,14 @@
     assign enable_m_axis_auto_rst = slv_reg5[16];
     assign m_axis_auto_rst = (m_axis_rst&enable_m_axis_auto_rst);
   
-    assign adc_data_after_sel = (ant_flag_in_rf_domain?adc_data[(ADC_PACK_DATA_WIDTH-1) : (2*IQ_DATA_WIDTH)]:adc_data[(2*IQ_DATA_WIDTH-1) : 0]);
+    /*MODIFIED: ant_flag[0]*/
+    assign adc_data_after_sel = (ant_flag_in_rf_domain[0]?adc_data[(ADC_PACK_DATA_WIDTH-1) : (2*IQ_DATA_WIDTH)]:adc_data[(2*IQ_DATA_WIDTH-1) : 0]);
+    assign adc_data_after_sel_2 = (ant_flag_in_rf_domain[1]?adc_data[(ADC_PACK_DATA_WIDTH-1) : (2*IQ_DATA_WIDTH)]: 0);
+    
     assign adc_data_internal  = (mute_adc_out_to_bb_in_rf_domain?0:adc_data_after_sel);
-
+    assign adc_data_internal_2  = (mute_adc_out_to_bb_in_rf_domain?0:adc_data_after_sel_2);
+	/**/
+    
     assign bw20_i0 = ant_data_after_sel[  (IQ_DATA_WIDTH-1) : 0];
     assign bw20_q0 = ant_data_after_sel[(2*IQ_DATA_WIDTH-1) : IQ_DATA_WIDTH];
     
@@ -273,7 +303,7 @@
       .WIDTH          (1)  // integer; range: 1-1024
     ) xpm_cdc_array_single_inst_ant_flag (
       .src_clk  (s00_axi_aclk),  // optional; required when SRC_INPUT_REG = 1
-      .src_in   (slv_reg16[0]),
+      .src_in   (slv_reg16[1:0]),
       .dest_clk (adc_clk),
       .dest_out (ant_flag_in_rf_domain)
     );
@@ -408,7 +438,39 @@
         .rf_iq(rf_iq_loopback),
         .wifi_rx_iq_fifo_emptyn(wifi_rx_iq_fifo_emptyn)
     );
+/*ADDED*/
+    rx_iq_intf # (
+        .C_S00_AXIS_TDATA_WIDTH(C_S00_AXIS_TDATA_WIDTH),
+        .IQ_DATA_WIDTH(IQ_DATA_WIDTH)  
+     ) rx_iq_intf_i_2 (
+        // ----------- debug purpose ---------------
+        /*UNUSED.trigger_out(trigger_out_internal),*/
+        // ----------- debug purpose ---------------
 
+        .rstn(s00_axis_aresetn&(~slv_reg0[3])),
+        .clk(s00_axis_aclk),
+        .bw20_i0(bw20_i1),
+        .bw20_q0(bw20_q1),
+        .bw20_iq_valid(bw20_iq1_valid),
+        .data_from_s_axis(s_axis_data_to_acc),
+        .emptyn_from_s_axis(s_axis_emptyn_to_acc),
+        /*UNUSED.ask_data_from_s_axis(acc_ask_data_from_s_axis),*/
+        //        .ask_data_from_adc(),
+        .fifo_in_sel(slv_reg3[2:0]),
+        //        .fifo_out_sel(slv_reg3[3]),
+        /*UNUSED.ask_data_from_s_axis_en(~slv_reg4[0]),*/
+        .fifo_in_en(~slv_reg4[1]),
+        .fifo_out_en(~slv_reg4[2]),
+        .bb_20M_en(slv_reg4[3]),
+        .rf_i(rf_i_to_acc_2),
+        .rf_q(rf_q_to_acc_2),
+        .rf_iq_valid(sample_strobe_2),
+        .rf_iq_valid_delay_sel(slv_reg3[4]),
+        .rf_iq(rf_iq_loopback_2)
+        /*UNUSED.wifi_rx_iq_fifo_emptyn(wifi_rx_iq_fifo_emptyn)*/
+    );
+/**/
+    
     byte_to_word_fcs_sn_insert byte_to_word_fcs_sn_insert_inst (
         .clk(m00_axis_aclk),
         .rstn(m00_axis_aresetn&(~slv_reg0[7])&(~pkt_header_valid_strobe)),

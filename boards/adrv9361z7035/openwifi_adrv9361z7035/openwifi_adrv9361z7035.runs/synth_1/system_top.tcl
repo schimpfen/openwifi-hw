@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z035ifbg676-2L
 
 set_param project.singleFileAddWarning.threshold 0
@@ -50,8 +51,6 @@ set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_iic_main_0/system_axi_iic_main_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_0/system_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/axi_ad9361_constr.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_clock_mon_constr.xdc]
@@ -91,15 +90,11 @@ set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_2/system_xbar_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xbar_3/system_xbar_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_openofdm_rx_0_0/src/deinter_lut/deinter_lut_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_openofdm_rx_0_0/src/rot_lut/rot_lut_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_openofdm_rx_0_0/src/atan_lut/atan_lut_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/fifo8_1clk_dep64_fifo_generator_0_0/fifo8_1clk_dep64_fifo_generator_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/mv_avg32_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc]
 set_property used_in_implementation false [get_files -all /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/mv_avg128_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc]
