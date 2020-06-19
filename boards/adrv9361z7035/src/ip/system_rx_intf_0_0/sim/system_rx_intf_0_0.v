@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:rx_intf:1.1
-// IP Revision: 1
+// IP Revision: 2
 
 `timescale 1ns/1ps
 

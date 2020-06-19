@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Jun 11 18:32:23 2020
-# Process ID: 5820
+# Start of session at: Fri Jun 19 09:13:53 2020
+# Process ID: 12609
 # Current directory: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1
 # Command line: vivado -log system_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top.tcl
 # Log file: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/system_top.vds
@@ -24,11 +24,11 @@ CRITICAL WARNING: [filemgmt 20-1741] File 'ram_2port.v' is used by one or more m
 * system_openofdm_tx_0_0 (/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/ram_2port.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5880 
+INFO: Helper process launched with PID 12636 
 WARNING: [Synth 8-992] crc_data_reg_reg is already implicitly declared earlier [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/dot11_tx.v:108]
 WARNING: [Synth 8-2490] overwriting previous definition of module ram_2port [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/ram_2port.v:12]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1569.219 ; gain = 143.500 ; free physical = 20728 ; free virtual = 59178
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1569.227 ; gain = 143.500 ; free physical = 25711 ; free virtual = 61063
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-2048] function gpo_bit_used does not always return a value [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/304c/hdl/axi_iic_v2_0_vh_rfs.vhd:1139]
 INFO: [Synth 8-6157] synthesizing module 'system_top' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system_top.v:40]
@@ -9155,8 +9155,8 @@ WARNING: [Synth 8-3848] Net slv_reg20 in module/entity openofdm_tx does not have
 	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 1 - type: integer 
-WARNING: [Synth 8-689] width (2) of port connection 'src_in' does not match port width (1) of module 'xpm_cdc_array_single' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:306]
-WARNING: [Synth 8-689] width (2) of port connection 'dest_out' does not match port width (1) of module 'xpm_cdc_array_single' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:308]
+WARNING: [Synth 8-689] width (2) of port connection 'src_in' does not match port width (1) of module 'xpm_cdc_array_single' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf.v:314]
+WARNING: [Synth 8-689] width (2) of port connection 'dest_out' does not match port width (1) of module 'xpm_cdc_array_single' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf.v:316]
 	Parameter IQ_DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'fifo32_2clk_dep32_fifo_generator_0_0' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/synth/fifo32_2clk_dep32_fifo_generator_0_0.vhd:77]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
@@ -9580,7 +9580,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo64_1clk_dep512_fifo_generator_0_0' 
 INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/synth/fifo64_1clk_dep512_fifo_generator_0_0.vhd:543]
 INFO: [Synth 8-256] done synthesizing module 'fifo64_1clk_dep512_fifo_generator_0_0' (563#1) [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/synth/fifo64_1clk_dep512_fifo_generator_0_0.vhd:75]
 WARNING: [Synth 8-350] instance 'fifo_generator_0' of module 'fifo64_1clk_dep512_fifo_generator_0_0' requires 11 connections, but only 9 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/fifo64_1clk_dep512.v:52]
-WARNING: [Synth 8-689] width (14) of port connection 'data_count' does not match port width (10) of module 'fifo64_1clk_dep512' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf_s_axis.v:114]
+WARNING: [Synth 8-689] width (14) of port connection 'data_count' does not match port width (10) of module 'fifo64_1clk_dep512' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf_s_axis.v:114]
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter IQ_DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'fifo32_1clk_dep32_fifo_generator_0_0' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/synth/fifo32_1clk_dep32_fifo_generator_0_0.vhd:75]
@@ -9788,8 +9788,8 @@ INFO: [Synth 8-638] synthesizing module 'fifo32_1clk_dep32_fifo_generator_0_0' [
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/synth/fifo32_1clk_dep32_fifo_generator_0_0.vhd:543]
 INFO: [Synth 8-256] done synthesizing module 'fifo32_1clk_dep32_fifo_generator_0_0' (566#1) [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/synth/fifo32_1clk_dep32_fifo_generator_0_0.vhd:75]
-WARNING: [Synth 8-350] instance 'fifo_generator_0' of module 'fifo32_1clk_dep32_fifo_generator_0_0' requires 11 connections, but only 9 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/fifo32_1clk_dep32.v:52]
-WARNING: [Synth 8-350] instance 'rx_iq_intf_i_2' of module 'rx_iq_intf' requires 20 connections, but only 16 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
+WARNING: [Synth 8-350] instance 'fifo_generator_0' of module 'fifo32_1clk_dep32_fifo_generator_0_0' requires 11 connections, but only 9 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/fifo32_1clk_dep32.v:52]
+WARNING: [Synth 8-350] instance 'rx_iq_intf_i_2' of module 'rx_iq_intf' requires 20 connections, but only 16 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf.v:470]
 	Parameter GPIO_STATUS_WIDTH bound to: 8 - type: integer 
 	Parameter RSSI_HALF_DB_WIDTH bound to: 11 - type: integer 
 	Parameter IQ_DATA_WIDTH bound to: 16 - type: integer 
@@ -9804,8 +9804,8 @@ WARNING: [Synth 8-350] instance 'rx_iq_intf_i_2' of module 'rx_iq_intf' requires
 	Parameter WAIT_FILTER_FLAG bound to: 3'b011 
 	Parameter WAIT_DMA_TLAST bound to: 3'b100 
 	Parameter WAIT_RST_DONE bound to: 3'b101 
-INFO: [Synth 8-226] default block is never used [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf_pl_to_m_axis.v:106]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf_pl_to_m_axis.v:172]
+INFO: [Synth 8-226] default block is never used [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf_pl_to_m_axis.v:106]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf_pl_to_m_axis.v:172]
 	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
 	Parameter MAX_NUM_DMA_SYMBOL bound to: 8192 - type: integer 
 	Parameter MAX_BIT_NUM_DMA_SYMBOL bound to: 14 - type: integer 
@@ -9814,7 +9814,7 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/sdr/wor
 	Parameter IDLE bound to: 2'b00 
 	Parameter INIT_COUNTER bound to: 2'b01 
 	Parameter SEND_STREAM bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf_m_axis.v:97]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf_m_axis.v:97]
 INFO: [Synth 8-638] synthesizing module 'fifo64_1clk_fifo_generator_0_0' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/synth/fifo64_1clk_fifo_generator_0_0.vhd:75]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
@@ -10021,9 +10021,6 @@ INFO: [Synth 8-638] synthesizing module 'fifo64_1clk_fifo_generator_0_0' [/home/
 INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/synth/fifo64_1clk_fifo_generator_0_0.vhd:543]
 INFO: [Synth 8-256] done synthesizing module 'fifo64_1clk_fifo_generator_0_0' (573#1) [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/synth/fifo64_1clk_fifo_generator_0_0.vhd:75]
 WARNING: [Synth 8-350] instance 'fifo_generator_0' of module 'fifo64_1clk_fifo_generator_0_0' requires 11 connections, but only 9 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/fifo64_1clk.v:52]
-WARNING: [Synth 8-3848] Net bw20_i1 in module/entity rx_intf does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:180]
-WARNING: [Synth 8-3848] Net bw20_q1 in module/entity rx_intf does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:181]
-WARNING: [Synth 8-3848] Net bw20_iq1_valid in module/entity rx_intf does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:182]
 WARNING: [Synth 8-350] instance 'rx_intf_0' of module 'system_rx_intf_0_0' requires 64 connections, but only 59 given [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/synth/system.v:4309]
 INFO: [Synth 8-638] synthesizing module 'system_sys_rstgen1_0' [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/synth/system_sys_rstgen1_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -11310,6 +11307,9 @@ WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have dri
 WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/72a7/sysid_rom.v:12]
 WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/72a7/sysid_rom.v:12]
 WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/72a7/sysid_rom.v:12]
+WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/72a7/sysid_rom.v:12]
+WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/72a7/sysid_rom.v:12]
+WARNING: [Synth 8-3848] Net lut_rom in module/entity sysid_rom does not have driver. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/72a7/sysid_rom.v:12]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
@@ -11738,7 +11738,7 @@ WARNING: [Synth 8-3331] design util_cpack2 has unconnected port enable_14
 WARNING: [Synth 8-3331] design util_cpack2 has unconnected port enable_15
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:11:59 ; elapsed = 00:12:28 . Memory (MB): peak = 3437.227 ; gain = 2011.508 ; free physical = 19591 ; free virtual = 58178
+Finished RTL Elaboration : Time (s): cpu = 00:11:40 ; elapsed = 00:12:07 . Memory (MB): peak = 3437.539 ; gain = 2011.812 ; free physical = 23867 ; free virtual = 59575
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -11808,56 +11808,56 @@ WARNING: [Synth 8-3295] tying undriven pin openofdm_tx_s_axi_i:SLV_REG20[3] to c
 WARNING: [Synth 8-3295] tying undriven pin openofdm_tx_s_axi_i:SLV_REG20[2] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/openofdm_tx.v:114]
 WARNING: [Synth 8-3295] tying undriven pin openofdm_tx_s_axi_i:SLV_REG20[1] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/openofdm_tx.v:114]
 WARNING: [Synth 8-3295] tying undriven pin openofdm_tx_s_axi_i:SLV_REG20[0] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/openofdm_tx.v:114]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[15] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[14] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[13] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[12] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[11] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[10] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[9] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[8] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[7] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[6] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[5] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[4] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[3] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[2] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[1] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_i0[0] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[15] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[14] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[13] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[12] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[11] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[10] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[9] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[8] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[7] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[6] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[5] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[4] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[3] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[2] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[1] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_q0[0] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:bw20_iq_valid to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
-WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:ask_data_from_s_axis_en to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/521f/src/rx_intf.v:445]
+WARNING: [Synth 8-3295] tying undriven pin rx_iq_intf_i_2:ask_data_from_s_axis_en to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/f100/src/rx_intf.v:470]
 WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG22[31] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
 WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG22[30] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
 WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[31] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
 WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[23] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
 WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[15] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[14] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[13] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[12] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[11] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[10] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[9] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[8] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[7] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[6] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[5] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[4] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[3] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[2] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[1] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin tx_intf_s_axi_i:SLV_REG24[0] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/3328/src/tx_intf.v:285]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[31] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[30] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[29] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[28] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[27] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[26] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[25] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[24] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[23] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[22] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[21] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[20] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[19] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[18] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[17] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[16] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[15] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
+WARNING: [Synth 8-3295] tying undriven pin xpu_s_axi_i:SLV_REG51[14] to constant 0 [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/936d/src/xpu.v:546]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:12:06 ; elapsed = 00:12:35 . Memory (MB): peak = 3437.227 ; gain = 2011.508 ; free physical = 19804 ; free virtual = 58391
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:46 ; elapsed = 00:12:13 . Memory (MB): peak = 3437.539 ; gain = 2011.812 ; free physical = 24122 ; free virtual = 59832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:12:06 ; elapsed = 00:12:35 . Memory (MB): peak = 3437.227 ; gain = 2011.508 ; free physical = 19804 ; free virtual = 58391
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:11:46 ; elapsed = 00:12:13 . Memory (MB): peak = 3437.539 ; gain = 2011.812 ; free physical = 24122 ; free virtual = 59832
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 11315 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 11316 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z035ifbg676-2L
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -12034,6 +12034,8 @@ Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z70
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/duc_bank_core_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/fir_compiler_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0'
@@ -12052,9 +12054,11 @@ Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z70
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3650.016 ; gain = 1.195 ; free physical = 18442 ; free virtual = 57029
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3652.328 ; gain = 1.195 ; free physical = 22812 ; free virtual = 58572
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr.xdc]
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
@@ -12084,7 +12088,7 @@ Finished Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/a
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/bd/bd.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3656.016 ; gain = 0.000 ; free physical = 18498 ; free virtual = 57085
+Netlist sorting complete. Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3658.328 ; gain = 0.000 ; free physical = 22817 ; free virtual = 58577
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk/inst'
@@ -12103,10 +12107,14 @@ Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z70
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/xpm_cdc_array_single_inst_ant_flag'
@@ -12137,6 +12145,10 @@ Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gra
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
@@ -12147,6 +12159,10 @@ Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sin
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
@@ -12157,6 +12173,10 @@ Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_syn
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
@@ -12219,10 +12239,10 @@ WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SU
 Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/xpm_memory_tdpram_inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3656.016 ; gain = 0.000 ; free physical = 18484 ; free virtual = 57072
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3658.328 ; gain = 0.000 ; free physical = 22795 ; free virtual = 58556
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3659.211 ; gain = 1.195 ; free physical = 18480 ; free virtual = 57067
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3660.328 ; gain = 0.000 ; free physical = 22753 ; free virtual = 58514
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1512 instances were transformed.
   BUFGMUX_CTRL => BUFGCTRL (inverted pins: S0): 1 instances
@@ -12238,14 +12258,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1S => RAM64X1S (RAMS64E): 1 instances
   SRL16 => SRL16E: 5 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3659.211 ; gain = 0.000 ; free physical = 18479 ; free virtual = 57066
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3659.211 ; gain = 0.000 ; free physical = 18478 ; free virtual = 57066
+Netlist sorting complete. Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.27 . Memory (MB): peak = 3660.328 ; gain = 0.000 ; free physical = 22667 ; free virtual = 58430
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3660.328 ; gain = 0.000 ; free physical = 22665 ; free virtual = 58429
 CRITICAL WARNING: [filemgmt 20-1741] File 'ram_2port.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
 * system_openofdm_rx_0_0 (/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/43ce/src/ram_2port.v)
 * system_openofdm_tx_0_0 (/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/8f91/src/ram_2port.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:13:30 ; elapsed = 00:13:45 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 19462 ; free virtual = 58050
+Finished Constraint Validation : Time (s): cpu = 00:13:09 ; elapsed = 00:13:22 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 23738 ; free virtual = 59504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 ---------------------------------------------------------------------------------
@@ -12253,7 +12273,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z035ifbg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:13:30 ; elapsed = 00:13:45 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 19462 ; free virtual = 58050
+Finished Loading Part and Timing Information : Time (s): cpu = 00:13:09 ; elapsed = 00:13:22 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 23737 ; free virtual = 59504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -12624,6 +12644,7 @@ Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/mixer_duc_0/inst. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 448).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/fir_compiler_0/U0. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 453).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 456).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 456).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 456).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 465).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0. (constraint file  /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/dont_touch.xdc, line 465).
@@ -12850,6 +12871,7 @@ Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/s02_couplers/auto_us. (constraint file  auto generated constraint, line ).
@@ -12868,16 +12890,22 @@ Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_WRITE.write_addr_inst /\USE_B_CHANNEL.cmd_b_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_READ.USE_SPLIT_R.read_addr_inst /\USE_R_CHANNEL.cmd_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
@@ -12903,7 +12931,7 @@ Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/axi_hp1_int
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/xpm_memory_tdpram_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:13:32 ; elapsed = 00:13:47 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 19377 ; free virtual = 57966
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:13:11 ; elapsed = 00:13:24 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 23644 ; free virtual = 59411
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "adc_valid_p" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "adc_data_p" won't be mapped to RAM because it is too sparse
@@ -13174,7 +13202,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'r_V_5_reg_589_reg' 
 WARNING: [Synth 8-3936] Found unconnected internal register 'r_V_2_reg_574_reg' and it is trimmed from '32' to '22' bits. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/ipshared/77fc/hdl/verilog/mixer_duc.v:511]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'tx_intf_m_axis'
-DSP Debug: swapped A/B pins for adder 0x3e7259a0
+DSP Debug: swapped A/B pins for adder 0x5b11a210
 INFO: [Synth 8-802] inferred FSM for state register 'filter_state_reg' in module 'pkt_filter_ctl'
 INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
 INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
@@ -13558,7 +13586,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'calc_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rw_state_reg' using encoding 'one-hot' in module 'fifo8_delay64'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:14:18 ; elapsed = 00:14:40 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 17184 ; free virtual = 55799
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:13:54 ; elapsed = 00:14:13 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 21434 ; free virtual = 57229
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_compare' (logic_gate__parameterized2) to 'i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_compare1'
 INFO: [Synth 8-223] decloning instance 'i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_compare' (logic_gate__parameterized3) to 'i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_compare1'
@@ -13618,7 +13646,7 @@ Report RTL Partitions:
 |28    |dot11__GCB1                                |           1|     22147|
 |29    |openofdm_rx__GC0                           |           1|      1318|
 |30    |openwifi_ip_imp_ZYLLT2__GCB0               |           1|     34071|
-|31    |openwifi_ip_imp_ZYLLT2__GCB1               |           1|     10262|
+|31    |openwifi_ip_imp_ZYLLT2__GCB1               |           1|     10804|
 |32    |openwifi_ip_imp_ZYLLT2__GCB2               |           1|     28653|
 |33    |openwifi_ip_imp_ZYLLT2__GCB3               |           1|     31901|
 |34    |openwifi_ip_imp_ZYLLT2__GCB4               |           1|     20913|
@@ -13792,6 +13820,55 @@ CRITICAL WARNING: [Synth 8-5796] RAM (sync_short_inst/delay_prod_avg_i_insti_9) 
 CRITICAL WARNING: [Synth 8-5796] RAM (sync_short_inst/delay_prod_avg_q_insti_17) has conflicting writes using multiple ports with same address
 CRITICAL WARNING: [Synth 8-5796] RAM (sync_short_inst/freq_offset_i_insti_22) has conflicting writes using multiple ports with same address
 CRITICAL WARNING: [Synth 8-5796] RAM (sync_short_inst/freq_offset_q_insti_27) has conflicting writes using multiple ports with same address
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[2].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[5].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[4].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[3].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[2].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[1].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[0].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/has_bit_reverse.busy_gen/proc_start_delay/need_sclr_lut.real_shift_ram.FF_gen[0].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_mult_stage_reg[0]) is unused and will be removed from module sync_long.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/optionally_negate_inputs/apply_negation.registered_twos_comp_hblknm.gen_full_slices[0].gen_fdre[0].ff_br) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/optionally_negate_inputs/apply_negation.registered_twos_comp_hblknm.gen_full_slices[0].gen_fdre[0].ff_bi) is unused and will be removed from module xfft_v9_1_1_viv.
 INFO: [Synth 8-5545] ROM "status_code" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "status_code" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-3971] The signal bk1.gen_dp_blocks[0].MEM_RAM_I/ram_tdp.ram_mem_reg was recognized as a true dual port RAM template.
@@ -13867,55 +13944,6 @@ INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC
 INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
 INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
 INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[5].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
-INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_dma_reg_module__2.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 DSP Report: Generating DSP count_top_scale_reg, operation Mode is: (A*(B:0x14))'.
@@ -14150,7 +14178,7 @@ INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instan
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5545] ROM "i_tdd_sync/end_of_period_s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:15:21 ; elapsed = 00:15:45 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 16619 ; free virtual = 55470
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:14:54 ; elapsed = 00:15:15 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20910 ; free virtual = 56945
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -14219,7 +14247,7 @@ Report RTL Partitions:
 |28    |dot11__GCB1                                |           1|     13991|
 |29    |openofdm_rx__GC0                           |           1|       751|
 |30    |openwifi_ip_imp_ZYLLT2__GCB0               |           1|     21756|
-|31    |openwifi_ip_imp_ZYLLT2__GCB1               |           1|      6528|
+|31    |openwifi_ip_imp_ZYLLT2__GCB1               |           1|      7059|
 |32    |openwifi_ip_imp_ZYLLT2__GCB2               |           1|     18909|
 |33    |openwifi_ip_imp_ZYLLT2__GCB3               |           1|     17465|
 |34    |openwifi_ip_imp_ZYLLT2__GCB4               |           1|     13186|
@@ -14253,7 +14281,7 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 69 of /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc:69]
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 74 of /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc:74]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:15:34 ; elapsed = 00:15:59 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 16093 ; free virtual = 55141
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:15:08 ; elapsed = 00:15:30 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20246 ; free virtual = 56496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -14263,7 +14291,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:15:50 ; elapsed = 00:16:14 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15969 ; free virtual = 55019
+Finished Timing Optimization : Time (s): cpu = 00:15:23 ; elapsed = 00:15:44 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20202 ; free virtual = 56443
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14300,7 +14328,7 @@ Report RTL Partitions:
 |28    |dot11__GCB1                                |           1|     13991|
 |29    |openofdm_rx__GC0                           |           1|       751|
 |30    |openwifi_ip_imp_ZYLLT2__GCB0               |           1|     21756|
-|31    |openwifi_ip_imp_ZYLLT2__GCB1               |           1|      6528|
+|31    |openwifi_ip_imp_ZYLLT2__GCB1               |           1|      7059|
 |32    |openwifi_ip_imp_ZYLLT2__GCB2               |           1|     18909|
 |33    |openwifi_ip_imp_ZYLLT2__GCB3               |           1|     17465|
 |34    |openwifi_ip_imp_ZYLLT2__GCB4               |           1|     13186|
@@ -14807,7 +14835,7 @@ INFO: [Synth 8-6837] The timing for the instance i_system_wrapper/system_i/openw
 INFO: [Synth 8-6837] The timing for the instance i_system_wrapper/system_i/axi_ad9361_adc_dma/inst/i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance i_system_wrapper/system_i/axi_ad9361_dac_dma/inst/i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:17:15 ; elapsed = 00:17:43 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15971 ; free virtual = 55019
+Finished Technology Mapping : Time (s): cpu = 00:16:46 ; elapsed = 00:17:12 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20117 ; free virtual = 56375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -15293,7 +15321,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:641]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:17:33 ; elapsed = 00:18:02 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15957 ; free virtual = 55005
+Finished IO Insertion : Time (s): cpu = 00:17:03 ; elapsed = 00:17:29 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20182 ; free virtual = 56439
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -15306,7 +15334,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:17:34 ; elapsed = 00:18:03 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15957 ; free virtual = 55005
+Finished Renaming Generated Instances : Time (s): cpu = 00:17:04 ; elapsed = 00:17:30 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20182 ; free virtual = 56439
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -15318,25 +15346,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:17:45 ; elapsed = 00:18:14 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15932 ; free virtual = 54980
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:17:15 ; elapsed = 00:17:42 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20039 ; free virtual = 56301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:17:45 ; elapsed = 00:18:14 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15932 ; free virtual = 54980
+Finished Renaming Generated Ports : Time (s): cpu = 00:17:15 ; elapsed = 00:17:42 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20039 ; free virtual = 56301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:17:47 ; elapsed = 00:18:16 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15927 ; free virtual = 54975
+Finished Handling Custom Attributes : Time (s): cpu = 00:17:17 ; elapsed = 00:17:44 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20101 ; free virtual = 56363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:17:47 ; elapsed = 00:18:17 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15927 ; free virtual = 54975
+Finished Renaming Generated Nets : Time (s): cpu = 00:17:18 ; elapsed = 00:17:44 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20102 ; free virtual = 56364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -15390,8 +15418,8 @@ Report Cell Usage:
 |35    |DSP48E1_13    |     1|
 |36    |DSP48E1_16    |     9|
 |37    |DSP48E1_17    |     3|
-|38    |DSP48E1_18    |     1|
-|39    |DSP48E1_19    |     8|
+|38    |DSP48E1_18    |     8|
+|39    |DSP48E1_19    |     1|
 |40    |DSP48E1_2     |    22|
 |41    |DSP48E1_3     |     4|
 |42    |DSP48E1_4     |     1|
@@ -15405,12 +15433,12 @@ Report Cell Usage:
 |50    |IDDR          |     7|
 |51    |IDELAYCTRL    |     1|
 |52    |IDELAYE2      |     7|
-|53    |LUT1          |  3360|
-|54    |LUT2          |  8205|
-|55    |LUT3          | 15315|
-|56    |LUT4          |  6300|
-|57    |LUT5          |  4949|
-|58    |LUT6          | 11246|
+|53    |LUT1          |  3362|
+|54    |LUT2          |  8221|
+|55    |LUT3          | 15331|
+|56    |LUT4          |  6253|
+|57    |LUT5          |  4994|
+|58    |LUT6          | 11307|
 |59    |MUXCY         |  4862|
 |60    |MUXCY_L       |     9|
 |61    |MUXF7         |   551|
@@ -15436,7 +15464,7 @@ Report Cell Usage:
 |81    |RAMB18E1_2    |     2|
 |82    |RAMB18E1_3    |     1|
 |83    |RAMB18E1_4    |     1|
-|84    |RAMB18E1_5    |     2|
+|84    |RAMB18E1_5    |     3|
 |85    |RAMB18E1_6    |     3|
 |86    |RAMB18E1_7    |     4|
 |87    |RAMB36E1      |     1|
@@ -15460,8 +15488,8 @@ Report Cell Usage:
 |105   |FDE           |   132|
 |106   |FDPE          |   286|
 |107   |FDR           |   587|
-|108   |FDRE          | 70331|
-|109   |FDSE          |  1750|
+|108   |FDRE          | 70454|
+|109   |FDSE          |  1764|
 |110   |IBUF          |    98|
 |111   |IBUFDS        |     7|
 |112   |IBUFGDS       |     1|
@@ -15470,13 +15498,13 @@ Report Cell Usage:
 |115   |OBUFDS        |     8|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:17:47 ; elapsed = 00:18:17 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 15927 ; free virtual = 54975
+Finished Writing Synthesis Report : Time (s): cpu = 00:17:18 ; elapsed = 00:17:44 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 20102 ; free virtual = 56364
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 6 critical warnings and 8910 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:16:29 ; elapsed = 00:17:14 . Memory (MB): peak = 3663.211 ; gain = 2011.508 ; free physical = 18553 ; free virtual = 57602
-Synthesis Optimization Complete : Time (s): cpu = 00:17:48 ; elapsed = 00:18:18 . Memory (MB): peak = 3663.211 ; gain = 2237.492 ; free physical = 18576 ; free virtual = 57601
+Synthesis finished with 0 errors, 6 critical warnings and 8911 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:16:00 ; elapsed = 00:16:45 . Memory (MB): peak = 3664.328 ; gain = 2011.812 ; free physical = 22761 ; free virtual = 59026
+Synthesis Optimization Complete : Time (s): cpu = 00:17:18 ; elapsed = 00:17:48 . Memory (MB): peak = 3664.328 ; gain = 2238.602 ; free physical = 22784 ; free virtual = 59026
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 14963 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 14964 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
@@ -15486,7 +15514,7 @@ Finished Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/a
 Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/bd/bd.tcl]
 Finished Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/bd/bd.tcl]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3679.219 ; gain = 0.000 ; free physical = 18345 ; free virtual = 57370
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3680.336 ; gain = 0.000 ; free physical = 22566 ; free virtual = 58809
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2451 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 1385 instances
@@ -15506,11 +15534,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 5 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-2096 Infos, 788 Warnings, 9 Critical Warnings and 0 Errors encountered.
+2095 Infos, 789 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:18:20 ; elapsed = 00:18:51 . Memory (MB): peak = 3679.219 ; gain = 2256.496 ; free physical = 18785 ; free virtual = 57810
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3679.219 ; gain = 0.000 ; free physical = 18785 ; free virtual = 57810
+synth_design: Time (s): cpu = 00:17:49 ; elapsed = 00:18:19 . Memory (MB): peak = 3680.336 ; gain = 2257.605 ; free physical = 22994 ; free virtual = 59237
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3680.336 ; gain = 0.000 ; free physical = 23002 ; free virtual = 59245
 INFO: [Common 17-1381] The checkpoint '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/system_top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 3703.230 ; gain = 24.012 ; free physical = 18756 ; free virtual = 57808
+write_checkpoint: Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 3704.348 ; gain = 24.012 ; free physical = 22960 ; free virtual = 59228
 INFO: [runtcl-4] Executing : report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 18:51:58 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 19 09:32:55 2020...

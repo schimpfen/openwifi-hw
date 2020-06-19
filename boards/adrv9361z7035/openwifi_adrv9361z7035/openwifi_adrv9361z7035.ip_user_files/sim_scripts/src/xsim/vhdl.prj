@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../../../src/ip/system_axi_iic_main_0/sim/system_axi_iic_main_0.vhd" \
+"../../../../../src/ip/system_sys_rstgen_0/sim/system_sys_rstgen_0.vhd" \
+"../../../../../src/ip/system_util_ad9361_divclk_reset_0/sim/system_util_ad9361_divclk_reset_0.vhd" \
+"../../../../../src/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/sim/bd_31bd_psr_aclk_0.vhd" \
+"../../../../../src/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/sim/bd_c0fd_psr_aclk_0.vhd" \
+"../../../../../src/ip/system_axi_dma_0_0/sim/system_axi_dma_0_0.vhd" \
+"../../../../../src/ip/system_axi_dma_1_0/sim/system_axi_dma_1_0.vhd" \
+"../../../../../src/ip/system_openofdm_rx_0_0/src/div_gen_div_gen_0_0/sim/div_gen_div_gen_0_0.vhd" \
+"../../../../../src/ip/system_openofdm_rx_0_0/src/xfft_v9/sim/xfft_v9.vhd" \
+"../../../../../src/ip/system_openofdm_rx_0_0/src/viterbi_v7_0/sim/viterbi_v7_0.vhd" \
+"../../../../../src/ip/system_openofdm_rx_0_0/src/complex_multiplier/sim/complex_multiplier.vhd" \
+"../../../../../src/ip/system_sys_rstgen1_0/sim/system_sys_rstgen1_0.vhd" \
+"../../../../../src/ip/system_xpu_0_0/src/mv_avg32_fir_compiler_0_0/sim/mv_avg32_fir_compiler_0_0.vhd" \
+"../../../../../src/ip/system_xpu_0_0/src/mv_avg128_fir_compiler_0_0/sim/mv_avg128_fir_compiler_0_0.vhd" \
+"../../../../../src/ip/system_tx_intf_0_0/src/duc_bank_core_fir_compiler_0_0/sim/duc_bank_core_fir_compiler_0_0.vhd" \
+
+nosort

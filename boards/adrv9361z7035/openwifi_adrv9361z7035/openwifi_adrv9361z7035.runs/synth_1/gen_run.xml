@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z035ifbg676-2L" LaunchTime="1591914742">
+<GenRun Id="synth_1" LaunchPart="xc7z035ifbg676-2L" LaunchTime="1592575640">
   <File Type="VDS-TIMING-PB" Name="system_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="system_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="system_top.dcp"/>
@@ -97,6 +97,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../src/system.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -109,13 +110,13 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design">
-      <Option Id="ResourceSharing">2</Option>
+      <Option Id="ShregMinSize">5</Option>
       <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="FsmExtraction">1</Option>
+      <Option Id="ResourceSharing">2</Option>
       <Option Id="NoCombineLuts">1</Option>
       <Option Id="RepFanoutThreshold">400</Option>
       <Option Id="ReTiming">1</Option>
-      <Option Id="ShregMinSize">5</Option>
-      <Option Id="FsmExtraction">1</Option>
     </Step>
   </Strategy>
 </GenRun>

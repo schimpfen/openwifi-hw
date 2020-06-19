@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:rx_intf:1.1
-// IP Revision: 1
+// IP Revision: 2
 
 (* X_CORE_INFO = "rx_intf,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "system_rx_intf_0_0,rx_intf,{}" *)
