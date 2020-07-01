@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip/rx_stream_adder/rx_stream_adder.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip/rx_stream_adder/rx_stream_adder.srcs/sim_1/new/incr_tb.v,1593643105,verilog,,,,incr_tb,,,,,,,,
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip/rx_stream_adder/rx_stream_adder.srcs/sources_1/new/Adder.v,1593643032,verilog,,/home/sdr/workspace/ns/openwifi/openwifi-hw/ip/rx_stream_adder/rx_stream_adder.srcs/sim_1/new/incr_tb.v,,Adder,,,,,,,,

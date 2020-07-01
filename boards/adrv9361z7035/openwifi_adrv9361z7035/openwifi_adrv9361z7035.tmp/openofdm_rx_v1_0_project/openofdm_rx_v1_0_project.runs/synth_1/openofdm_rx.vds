@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 19 15:30:47 2020
+# Process ID: 12538
+# Current directory: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.tmp/openofdm_rx_v1_0_project/openofdm_rx_v1_0_project.runs/synth_1
+# Command line: vivado -log openofdm_rx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source openofdm_rx.tcl
+# Log file: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.tmp/openofdm_rx_v1_0_project/openofdm_rx_v1_0_project.runs/synth_1/openofdm_rx.vds
+# Journal file: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.tmp/openofdm_rx_v1_0_project/openofdm_rx_v1_0_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source openofdm_rx.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/high'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/bits_to_bytes.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/calc_mean.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/complex_mult.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/complex_to_mag.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/complex_to_mag_sq.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/crc32.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/deinterleave.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/delayT.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/delay_sample.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/demodulate.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/descramble.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/div_gen.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/divider.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/equalizer.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/ht_sig_crc.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/moving_avg.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/ofdm_decoder.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/openofdm_rx_s_axi.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/phase.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/ram_2port.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/rotate.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/stage_mult.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/sync_long.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/sync_short.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/openofdm_rx.v:]
+Command: synth_design -top openofdm_rx -part xc7z035ifbg676-2L
+Starting synth_design
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Synthesis target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/viterbi_v7_0/viterbi_v7_0.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/deinter_lut/deinter_lut.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/div_gen_xlslice_0_0/div_gen_xlslice_0_0.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/div_gen_div_gen_0_0/div_gen_div_gen_0_0.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/complex_multiplier/complex_multiplier.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/xfft_v9/xfft_v9.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/atan_lut/atan_lut.xci
+/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/rot_lut/rot_lut.xci
+
+INFO: [IP_Flow 19-2162] IP 'viterbi_v7_0' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'viterbi_v7_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'deinter_lut' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'deinter_lut' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'div_gen_xlslice_0_0' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'div_gen_xlslice_0_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'div_gen_div_gen_0_0' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'div_gen_div_gen_0_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'complex_multiplier' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'complex_multiplier' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'xfft_v9' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'xfft_v9' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'atan_lut' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'atan_lut' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'rot_lut' is locked:
+* Current project part 'xc7z035ifbg676-2L' and the part 'xc7z045ffg900-2' used to customize the IP 'rot_lut' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12567 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1478.094 ; gain = 90.996 ; free physical = 23789 ; free virtual = 60433
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'openofdm_rx' [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/openofdm_rx.v:4]
+	Parameter IQ_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter RSSI_HALF_DB_WIDTH bound to: 11 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dot11' [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:3]
+	Parameter PI bound to: 1608 - type: integer 
+	Parameter DOUBLE_PI bound to: 3216 - type: integer 
+	Parameter PI_2 bound to: 804 - type: integer 
+	Parameter PI_4 bound to: 402 - type: integer 
+	Parameter PI_3_4 bound to: 1206 - type: integer 
+	Parameter SR_POWER_THRES bound to: 3 - type: integer 
+	Parameter SR_POWER_WINDOW bound to: 4 - type: integer 
+	Parameter SR_SKIP_SAMPLE bound to: 5 - type: integer 
+	Parameter SR_MIN_PLATEAU bound to: 6 - type: integer 
+	Parameter S_WAIT_POWER_TRIGGER bound to: 0 - type: integer 
+	Parameter S_SYNC_SHORT bound to: 1 - type: integer 
+	Parameter S_SYNC_LONG bound to: 2 - type: integer 
+	Parameter S_DECODE_SIGNAL bound to: 3 - type: integer 
+	Parameter S_CHECK_SIGNAL bound to: 4 - type: integer 
+	Parameter S_DETECT_HT bound to: 5 - type: integer 
+	Parameter S_HT_SIGNAL bound to: 6 - type: integer 
+	Parameter S_CHECK_HT_SIG_CRC bound to: 7 - type: integer 
+	Parameter S_CHECK_HT_SIG bound to: 8 - type: integer 
+	Parameter S_HT_STS bound to: 9 - type: integer 
+	Parameter S_HT_LTS bound to: 10 - type: integer 
+	Parameter S_DECODE_DATA bound to: 11 - type: integer 
+	Parameter S_SIGNAL_ERROR bound to: 12 - type: integer 
+	Parameter S_HT_SIG_ERROR bound to: 13 - type: integer 
+	Parameter S_DECODE_DONE bound to: 14 - type: integer 
+	Parameter E_OK bound to: 0 - type: integer 
+	Parameter E_PARITY_FAIL bound to: 1 - type: integer 
+	Parameter E_UNSUPPORTED_RATE bound to: 2 - type: integer 
+	Parameter E_WRONG_RSVD bound to: 3 - type: integer 
+	Parameter E_WRONG_TAIL bound to: 4 - type: integer 
+	Parameter E_UNSUPPORTED_MCS bound to: 1 - type: integer 
+	Parameter E_UNSUPPORTED_CBW bound to: 2 - type: integer 
+	Parameter E_HT_WRONG_RSVD bound to: 3 - type: integer 
+	Parameter E_UNSUPPORTED_STBC bound to: 4 - type: integer 
+	Parameter E_UNSUPPORTED_FEC bound to: 5 - type: integer 
+	Parameter E_UNSUPPORTED_SGI bound to: 6 - type: integer 
+	Parameter E_UNSUPPORTED_SPATIAL bound to: 7 - type: integer 
+	Parameter E_HT_WRONG_TAIL bound to: 8 - type: integer 
+	Parameter E_WRONG_CRC bound to: 9 - type: integer 
+	Parameter E_WRONG_FCS bound to: 1 - type: integer 
+	Parameter EXPECTED_FCS bound to: -955982469 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:20]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:21]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:22]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:25]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:26]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:27]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:28]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:29]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:30]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:34]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:35]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:36]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:37]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:38]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:39]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:46]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:47]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:208]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:214]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:225]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:226]
+ERROR: [Synth 8-439] module 'rot_lut' not found [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:119]
+ERROR: [Synth 8-6156] failed synthesizing module 'dot11' [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/dot11.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'openofdm_rx' [/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common/openofdm_rx/src/openofdm_rx.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1522.844 ; gain = 135.746 ; free physical = 23794 ; free virtual = 60437
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 27 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 19 15:30:59 2020...

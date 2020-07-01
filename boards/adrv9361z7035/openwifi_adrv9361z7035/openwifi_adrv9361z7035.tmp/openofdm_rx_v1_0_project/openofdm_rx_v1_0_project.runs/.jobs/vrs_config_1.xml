@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.tmp/openofdm_rx_v1_0_project/openofdm_rx_v1_0_project.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
