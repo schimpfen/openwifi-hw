@@ -273,6 +273,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo32_1clk_dep
 # IP: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xci
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo32_2clk_dep32_fifo_generator_0_0 || ORIG_REF_NAME==fifo32_2clk_dep32_fifo_generator_0_0} -quiet] -quiet
 
+# IP: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_IQ_Adder_0_0/system_IQ_Adder_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_IQ_Adder_0_0 || ORIG_REF_NAME==system_IQ_Adder_0_0} -quiet] -quiet
+
 # IP: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
 

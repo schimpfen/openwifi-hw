@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2018.3 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z035_1" gui_info="dashboard1=hw_ila_1[xc7z035_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z035_1/hw_ila_1/Status=ILA_STATUS_1;xc7z035_1/hw_ila_1/Settings=ILA_SETTINGS_1;xc7z035_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z035_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z035_1/XADC=XADC_PLOT_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z035_1" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/system_top.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/system_top.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value=""/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sysmon" gui_info="">
+    <Object name="XADC" gui_info="hw_ila_1=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[31]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[30]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[29]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[28]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[27]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[26]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[25]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[24]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/IQ_Adder_0/iq_strOut[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_count_total[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe23[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/byte_out_strobe"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe24[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/demod_is_ongoing"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[2:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+        <Option Id="ENUM.S_ADJUST_FREQ_OFFSET" value="eq3&apos;b100"/>
+        <Option Id="ENUM.S_CALC_FREQ_OFFSET" value="eq3&apos;b011"/>
+        <Option Id="ENUM.S_FIRST_LTS" value="eq3&apos;b000"/>
+        <Option Id="ENUM.S_GET_POLARITY" value="eq3&apos;b010"/>
+        <Option Id="ENUM.S_HT_LTS" value="eq3&apos;b101"/>
+        <Option Id="ENUM.S_SECOND_LTS" value="eq3&apos;b001"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/equalizer_inst/state[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/equalizer_inst/state[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/equalizer_inst/state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe25[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/fcs_ok"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe26[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/fcs_out_strobe"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[23:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe8[23:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_sig2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe27[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ht_unsupport"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[1:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ofdm_decoder_inst/deinterleave_inst/state[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ofdm_decoder_inst/deinterleave_inst/state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe9[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/old_state[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/old_state[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/old_state[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/old_state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe30[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_begin"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe31[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_header_valid"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe32[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_header_valid_strobe"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe33[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_ht"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe10[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe11[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_len_total[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe12[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/pkt_rate[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe13[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[31]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[30]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[29]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[28]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[27]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[26]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[25]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[24]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe36[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sample_in_strobe"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe14[23:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/signal_bits[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe38[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/soft_decoding"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe15[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+        <Option Id="ENUM.S_CHECK_HT_SIG" value="eq4&apos;b1000"/>
+        <Option Id="ENUM.S_CHECK_HT_SIG_CRC" value="eq4&apos;b0111"/>
+        <Option Id="ENUM.S_CHECK_SIGNAL" value="eq4&apos;b0100"/>
+        <Option Id="ENUM.S_DECODE_DATA" value="eq4&apos;b1011"/>
+        <Option Id="ENUM.S_DECODE_DONE" value="eq4&apos;b1110"/>
+        <Option Id="ENUM.S_DECODE_SIGNAL" value="eq4&apos;b0011"/>
+        <Option Id="ENUM.S_DETECT_HT" value="eq4&apos;b0101"/>
+        <Option Id="ENUM.S_HT_LTS" value="eq4&apos;b1010"/>
+        <Option Id="ENUM.S_HT_SIGNAL" value="eq4&apos;b0110"/>
+        <Option Id="ENUM.S_HT_SIG_ERROR" value="eq4&apos;b1101"/>
+        <Option Id="ENUM.S_HT_STS" value="eq4&apos;b1001"/>
+        <Option Id="ENUM.S_SIGNAL_ERROR" value="eq4&apos;b1100"/>
+        <Option Id="ENUM.S_SYNC_LONG" value="eq4&apos;b0010"/>
+        <Option Id="ENUM.S_SYNC_SHORT" value="eq4&apos;b0001"/>
+        <Option Id="ENUM.S_WAIT_POWER_TRIGGER" value="eq4&apos;b0000"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/state[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/state[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/state[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe16[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/status_code[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/status_code[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/status_code[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/status_code[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[2:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/state[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/state[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe17[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[31]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[30]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[29]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[28]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[27]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[26]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[25]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[24]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe18[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[31]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[30]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[29]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[28]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[27]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[26]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[25]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[24]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[23]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[22]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[21]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[20]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[19]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[18]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[17]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[16]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[15]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[14]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/rx_intf_0/sample_2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe22[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/gpio_status[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe19[13:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe20[13:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe21[13:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[13]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[12]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[11]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[10]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[9]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[8]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[7]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[6]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[5]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[4]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[3]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[2]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[1]"/>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/bb_rf_delay_count_top_scale_plus1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe28[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/phy_tx_done"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe29[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/phy_tx_started"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe34[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/pulse_tx_bb_end"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe35[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/pulse_tx_bb_start"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe37[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/search_indication"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe39[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/tx_bb_is_ongoing"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe40[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/tx_bb_is_ongoing_internal"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe41[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/tx_iq_fifo_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe42[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/tx_iq_fifo_empty_reg"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe43[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/tx_iq_running"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe44[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_on_detection_i/tx_rf_is_ongoing"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

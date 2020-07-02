@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1592572328"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1592572328"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1592572328"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1592572328"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1593652892"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1593652892"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1593652892"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1593652892"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/system_sys_ps7_0/system_sys_ps7_0.xci" Type="IP">
         <Instance HierarchyPath="sys_ps7"/>
@@ -352,6 +352,14 @@
       <File Name="sim/system.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/system_IQ_Adder_0_0/system_IQ_Adder_0_0.xci" Type="IP">
+        <Instance HierarchyPath="openwifi_ip/IQ_Adder_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/system_auto_pc_0/system_auto_pc_0.xci" Type="IP">

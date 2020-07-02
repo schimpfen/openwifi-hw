@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Fri Jun 19 10:19:40 2020
+| Date         : Wed Jul  1 21:55:45 2020
 | Host         : XPS running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_methodology -file system_top_methodology_drc_routed.rpt -pb system_top_methodology_drc_routed.pb -rpx system_top_methodology_drc_routed.rpx
 | Design       : system_top
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_system_top
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 261
@@ -105,142 +105,142 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X159Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X117Y344 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X160Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X119Y344 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X158Y274 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X118Y344 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X158Y276 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X117Y346 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X161Y276 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X119Y346 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X160Y276 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X118Y346 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X159Y277 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X117Y348 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X158Y281 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X122Y348 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X161Y281 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X120Y347 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X160Y281 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X121Y347 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[0].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X155Y161 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[0].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[0].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X154Y162 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[0].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[1].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X155Y173 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[1].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[1].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X155Y172 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[1].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[2].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X160Y188 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[2].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[2].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X157Y191 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[2].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[3].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X154Y189 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[3].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[3].i_xcvrlb_1/i_xfer_status/up_xfer_toggle_reg in site SLICE_X154Y192 is part of a synchronized register chain that is suboptimally placed as the load FDCE cell i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[3].i_xcvrlb_1/i_xfer_status/d_xfer_state_m1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#15 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X102Y326 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X101Y302 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#16 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X112Y329 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X90Y317 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#17 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X146Y288 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X77Y317 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#18 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X104Y309 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X74Y326 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#19 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X110Y314 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X121Y297 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#20 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X116Y317 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X115Y298 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#21 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X88Y254 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X76Y250 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#22 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X105Y280 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X102Y273 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#23 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X101Y279 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X101Y272 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#24 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X118Y267 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X101Y256 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#25 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X141Y263 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X139Y263 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#26 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X136Y264 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X116Y263 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#27 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X114Y242 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X111Y245 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#28 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X162Y290 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X141Y295 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning

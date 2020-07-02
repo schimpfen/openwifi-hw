@@ -1,0 +1,1741 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul  1 21:39:40 2020
+# Process ID: 25586
+# Current directory: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1
+# Command line: vivado -log system_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
+# Log file: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top.vdi
+# Journal file: /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/common'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sdr/workspace/ns/openwifi/openwifi-hw/ip_repo/high'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+Command: link_design -top system_top -part xc7z035ifbg676-2L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 6014 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z035ifbg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/axi_ad9361_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/axi_ad9361_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_clock_mon'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_clock_mon'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_clock_mon'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_clock_mon'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[3].i_xcvrlb_1/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[3].i_xcvrlb_1/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[0].i_xcvrlb_1/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[0].i_xcvrlb_1/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[1].i_xcvrlb_1/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[1].i_xcvrlb_1/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[2].i_xcvrlb_1/i_xfer_status'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst/g_lanes[2].i_xcvrlb_1/i_xfer_status'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_delay_cntrl/i_delay_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_delay_cntrl/i_delay_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_3/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_3/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_1/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_1/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_2/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_2/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_tdd_sync/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_tdd_sync/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0_board.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0_board.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_adc_fifo_0/util_wfifo_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_adc_fifo/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_adc_fifo_0/util_wfifo_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_adc_fifo/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_fifo_0/util_rfifo_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_fifo_0/util_rfifo_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_pz_xcvrlb_0/axi_xcvrlb_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_pz_xcvrlb_0/axi_xcvrlb_constr.xdc] for cell 'i_system_wrapper/system_i/axi_pz_xcvrlb/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_delay_cntrl/i_delay_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_delay_cntrl/i_delay_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0_board.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/sys_rstgen1/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0_board.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/sys_rstgen1/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/sys_rstgen1/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_sys_rstgen1_0/system_sys_rstgen1_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/sys_rstgen1/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/fifo8_1clk_dep64_fifo_generator_0_0/fifo8_1clk_dep64_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/fifo8_1clk_dep64_fifo_generator_0_0/fifo8_1clk_dep64_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/mv_avg32_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/iq_abs_avg_i/mv_avg32_i/fir_compiler_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/mv_avg32_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/iq_abs_avg_i/mv_avg32_i/fir_compiler_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/mv_avg128_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/iq_abs_avg_i/dc_rm_i/mv_avg128_i/fir_compiler_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_xpu_0_0/src/mv_avg128_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/iq_abs_avg_i/dc_rm_i/mv_avg128_i/fir_compiler_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_1clk_dep512_fifo_generator_0_0/fifo32_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_1clk_dep512_fifo_generator_0_0/fifo32_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep64_fifo_generator_0_0/fifo64_1clk_dep64_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep64_fifo_generator_0_0/fifo64_1clk_dep64_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep64_fifo_generator_0_0/fifo64_1clk_dep64_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_dep64_fifo_generator_0_0/fifo64_1clk_dep64_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/duc_bank_core_mixer_duc_0_0/constraints/mixer_duc.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/mixer_duc_0/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/duc_bank_core_mixer_duc_0_0/constraints/mixer_duc.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/mixer_duc_0/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/duc_bank_core_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/fir_compiler_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/duc_bank_core_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/duc_bank_core_i/fir_compiler_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_fifo_generator_0_0/fifo64_1clk_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/fifo32_1clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/fifo32_1clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/fifo32_1clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_1clk_dep32_fifo_generator_0_0/fifo32_1clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo64_1clk_dep512_fifo_generator_0_0/fifo64_1clk_dep512_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr.xdc]
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr.xdc]
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr_lvds.xdc]
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/adrv9361z7035_constr_lvds.xdc]
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/ccbob_constr.xdc]
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/adi-hdl/projects/adrv9361z7035/common/ccbob_constr.xdc]
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc]
+WARNING: [Vivado 12-507] No nets matched 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_control_i/tx_control_state[0]'. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_control_i/tx_control_state[1]'. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/tx_control_i/tx_control_state[2]'. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:41]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'u_ila_0_FCLK_CLK2'. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:44]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'u_ila_0_FCLK_CLK2'. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:45]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc:45]
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/system.xdc]
+Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/bd/bd.tcl]
+Finished Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/bd/bd.tcl]
+Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/bd/bd.tcl]
+Finished Sourcing Tcl File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/bd/bd.tcl]
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/system_top/system_top.xdc]
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/synth_1/system_top/system_top.xdc]
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc:1]
+INFO: [Timing 38-2] Deriving generated clocks [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc:1]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2716.543 ; gain = 539.203 ; free physical = 22753 ; free virtual = 58814
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_adc_dma/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_adc_dma/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_dma/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_dma/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_axi_dma_1_0/system_axi_dma_1_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_tx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_rx_intf_0_0/src/fifo32_2clk_dep32_fifo_generator_0_0/fifo32_2clk_dep32_fifo_generator_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/s02_couplers/auto_us/inst'
+Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/src/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/s02_couplers/auto_us/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/xpm_cdc_array_single_inst_ant_flag'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/xpm_cdc_array_single_inst_ant_flag'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/xpm_cdc_array_single_inst_mute_adc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/xpm_cdc_array_single_inst_mute_adc'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/xpm_cdc_array_single_inst_ant_flag'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/xpm_cdc_array_single_inst_ant_flag'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/xpm_cdc_array_single_inst_src_sel'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/xpm_cdc_array_single_inst_src_sel'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_m_axis_i/fifo64_1clk_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i_2/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_iq_intf_i/fifo32_1clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/rx_intf_s_axis_i/fifo64_1clk_de512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i_2/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/rx_intf_0/inst/adc_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/rssi_i/fifo8_delay64_i/fifo8_1clk_dep64_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_m_axis_i/fifo64_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_iq_intf_i/fifo32_1clk_dep512_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/fifo64_1clk_dep64_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i1/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_intf_s_axis_i/fifo64_1clk_i0/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/xpm_memory_tdpram_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/tx_bit_intf_i/xpm_memory_tdpram_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22918 ; free virtual = 58979
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 313 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 30 instances
+  OBUFDS => OBUFDS: 8 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 12 instances
+  RAM16X1S => RAM32X1S (RAMS32): 96 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 164 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+14 Infos, 5 Warnings, 3 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 3196.777 ; gain = 1770.621 ; free physical = 22918 ; free virtual = 58979
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035i'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22914 ; free virtual = 58976
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 10dcda36b
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22791 ; free virtual = 58853
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "36d71f5b246d113d".
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22562 ; free virtual = 58689
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 14a1ebd24
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:02:20 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22562 ; free virtual = 58689
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 18 inverter(s) to 129 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 195b5304a
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22680 ; free virtual = 58808
+INFO: [Opt 31-389] Phase Retarget created 498 cells and removed 2125 cells
+INFO: [Opt 31-1021] In phase Retarget, 502 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 6 load pin(s).
+Phase 3 Constant propagation | Checksum: 174bd29a2
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22681 ; free virtual = 58808
+INFO: [Opt 31-389] Phase Constant propagation created 1707 cells and removed 3257 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 488 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 1707dc17a
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:02:38 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22672 ; free virtual = 58800
+INFO: [Opt 31-389] Phase Sweep created 86 cells and removed 11896 cells
+INFO: [Opt 31-1021] In phase Sweep, 2116 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: 1707dc17a
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22672 ; free virtual = 58800
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: ebb34d02
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:46 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22671 ; free virtual = 58799
+INFO: [Opt 31-389] Phase Shift Register Optimization created 9 cells and removed 18 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1717ab7dd
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:02:47 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22671 ; free virtual = 58799
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 176 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             498  |            2125  |                                            502  |
+|  Constant propagation         |            1707  |            3257  |                                            488  |
+|  Sweep                        |              86  |           11896  |                                           2116  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               9  |              18  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            176  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22671 ; free virtual = 58799
+Ending Logic Optimization Task | Checksum: e713583e
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:02:47 . Memory (MB): peak = 3196.777 ; gain = 0.000 ; free physical = 22671 ; free virtual = 58799
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.349 | TNS=-8.495 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 45 BRAM(s) out of a total of 121 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 5 WE to EN ports
+Number of BRAM Ports augmented: 52 newly gated: 25 Total Ports: 242
+Number of Flops added for Enable Generation: 7
+
+Ending PowerOpt Patch Enables Task | Checksum: 1412cb232
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22483 ; free virtual = 58614
+Ending Power Optimization Task | Checksum: 1412cb232
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:24 . Memory (MB): peak = 4140.477 ; gain = 943.699 ; free physical = 22587 ; free virtual = 58719
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1e0ceab25
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22580 ; free virtual = 58711
+Ending Final Cleanup Task | Checksum: 1e0ceab25
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22578 ; free virtual = 58710
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22581 ; free virtual = 58712
+Ending Netlist Obfuscation Task | Checksum: 183d48c0b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22581 ; free virtual = 58712
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 5 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:04:38 ; elapsed = 00:03:29 . Memory (MB): peak = 4140.477 ; gain = 943.699 ; free physical = 22588 ; free virtual = 58720
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22588 ; free virtual = 58720
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22576 ; free virtual = 58713
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22547 ; free virtual = 58696
+INFO: [Common 17-1381] The checkpoint '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22555 ; free virtual = 58714
+INFO: [runtcl-4] Executing : report_drc -file system_top_drc_opted.rpt -pb system_top_drc_opted.pb -rpx system_top_drc_opted.rpx
+Command: report_drc -file system_top_drc_opted.rpt -pb system_top_drc_opted.pb -rpx system_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_a.mult1/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_a.mult1/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1724] DSP_Dbus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_a.mult1/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1724] DSP_Dbus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1724] DSP_Dbus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_a.mult1/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1724] DSP_Dbus_sign_bit_restriction: i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_dma/inst/i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_dma/inst/i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9361_dac_dma/inst/i_transfer/i_request_arb/i_store_and_forward/i_mem/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_valid_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[10] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_0[4]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[6] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_0[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[7] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_0[1]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[8] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_0[2]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[9] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_0[3]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_ENARDEN_cooolgate_en_sig_59) which is driven by a register (i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg/rst_sync_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_ENARDEN_cooolgate_en_sig_59) which is driven by a register (i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control/d_data_cntrl_int_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_ENARDEN_cooolgate_en_sig_59) which is driven by a register (i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control/d_data_cntrl_int_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_ENARDEN_cooolgate_en_sig_59) which is driven by a register (i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl/d_data_cntrl_int_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ENBWREN (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[0] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[1] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[2] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[3] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[4] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[5] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[6] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[7] (net: i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_system_wrapper/system_i/util_ad9361_adc_fifo/inst/i_mem/m_ram_reg has an input control pin i_system_wrapper/system_i/util_ad9361_adc_fifo/inst/i_mem/m_ram_reg/ADDRARDADDR[9] (net: i_system_wrapper/system_i/util_ad9361_adc_fifo/inst/i_mem/Q[3]) which is driven by a register (i_system_wrapper/system_i/util_ad9361_adc_fifo/inst/dout_raddr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/fifo32_2clk_dep32_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_62) which is driven by a register (i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst/din_valid_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 30 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22532 ; free virtual = 58692
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 164e65005
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22532 ; free virtual = 58692
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22532 ; free virtual = 58692
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 198023738
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22390 ; free virtual = 58554
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ce6233fc
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:27 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22191 ; free virtual = 58355
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ce6233fc
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:27 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22191 ; free virtual = 58355
+Phase 1 Placer Initialization | Checksum: 1ce6233fc
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:28 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22191 ; free virtual = 58355
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 142b19841
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:32 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22124 ; free virtual = 58289
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_tx_0/inst/dot11_tx/ifft_ce_reg_0. Replicated 17 times.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg/rst. Replicated 6 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 23 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 23 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22092 ; free virtual = 58257
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-712] Optimization is not feasible on net bb_rf_delay_count_top_scale[13] due to MARK_DEBUG attribute.
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-665] Processed cell i_system_wrapper/system_i/openwifi_ip/openofdm_tx_0/inst/dot11_tx/CP_fifo/ram/ram_reg. 32 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell i_system_wrapper/system_i/openwifi_ip/openofdm_tx_0/inst/dot11_tx/pkt_fifo/ram/ram_reg_1. 9 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell i_system_wrapper/system_i/openwifi_ip/openofdm_tx_0/inst/dot11_tx/pkt_fifo/ram/ram_reg_3. 5 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell i_system_wrapper/system_i/openwifi_ip/openofdm_tx_0/inst/dot11_tx/pkt_fifo/ram/ram_reg_0. 9 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 55 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22091 ; free virtual = 58257
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22096 ; free virtual = 58262
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |           23  |              0  |                     2  |           0  |           1  |  00:00:02  |
+|  Fanout                        |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           1  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |           55  |              0  |                     4  |           0  |           1  |  00:00:01  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |           78  |              0  |                     6  |           1  |           6  |  00:00:03  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 152a102d2
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:34 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22091 ; free virtual = 58257
+Phase 2 Global Placement | Checksum: 7ac3d8ee
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:37 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22127 ; free virtual = 58293
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 7ac3d8ee
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:37 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22126 ; free virtual = 58292
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1cd2cd2b4
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:01:47 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22102 ; free virtual = 58268
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1d97bcde8
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:01:47 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22102 ; free virtual = 58268
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 130f1ff7d
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:01:48 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22102 ; free virtual = 58268
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 12a33886d
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:01:55 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22106 ; free virtual = 58273
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1588c2853
+
+Time (s): cpu = 00:04:52 ; elapsed = 00:02:16 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22019 ; free virtual = 58185
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 17f7d3272
+
+Time (s): cpu = 00:04:55 ; elapsed = 00:02:19 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22024 ; free virtual = 58190
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 16f0a3ae8
+
+Time (s): cpu = 00:04:56 ; elapsed = 00:02:20 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22024 ; free virtual = 58190
+Phase 3 Detail Placement | Checksum: 16f0a3ae8
+
+Time (s): cpu = 00:04:57 ; elapsed = 00:02:20 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22024 ; free virtual = 58191
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 15916190f
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_long_inst/dft_inst/U0/i_synth/axi_wrapper/ce_w2c, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ofdm_decoder_inst/viterbi_inst/U0/a1/obsiagd/obsnepq2as5aceiscezx4egshzcedpseisced/obsicscfet5ea, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ofdm_decoder_inst/viterbi_inst/U0/a1/obsiagd/obsfkscmirashyyaedpyi/obsfguzt4egzdp3r15ve/obsazzgx3hujx2int22tl4wa/obsnjqkh4eg34wjgupv4jx5la/obsiastp4eg32x3h5la/obsiyohp3xsxh0m/obsaua[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net i_system_wrapper/system_i/openwifi_ip/xpu_0/inst/xpu_s_axi_i/p_0_in, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 5 candidate nets, 0 success, 0 bufg driver replicated, 5 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 15916190f
+
+Time (s): cpu = 00:05:33 ; elapsed = 00:02:31 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22076 ; free virtual = 58243
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.026. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1f5ff69b8
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:03:19 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22059 ; free virtual = 58225
+Phase 4.1 Post Commit Optimization | Checksum: 1f5ff69b8
+
+Time (s): cpu = 00:06:49 ; elapsed = 00:03:20 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22059 ; free virtual = 58225
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1f5ff69b8
+
+Time (s): cpu = 00:06:50 ; elapsed = 00:03:21 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22066 ; free virtual = 58233
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1f5ff69b8
+
+Time (s): cpu = 00:06:51 ; elapsed = 00:03:21 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22067 ; free virtual = 58233
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22067 ; free virtual = 58233
+Phase 4.4 Final Placement Cleanup | Checksum: 17ca68df3
+
+Time (s): cpu = 00:06:53 ; elapsed = 00:03:23 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22067 ; free virtual = 58233
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17ca68df3
+
+Time (s): cpu = 00:06:53 ; elapsed = 00:03:24 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22067 ; free virtual = 58233
+Ending Placer Task | Checksum: 9eedd707
+
+Time (s): cpu = 00:06:53 ; elapsed = 00:03:24 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22209 ; free virtual = 58376
+INFO: [Common 17-83] Releasing license: Implementation
+101 Infos, 135 Warnings, 3 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:07:00 ; elapsed = 00:03:29 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22210 ; free virtual = 58376
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22211 ; free virtual = 58378
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22127 ; free virtual = 58344
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22003 ; free virtual = 58336
+INFO: [Common 17-1381] The checkpoint '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22148 ; free virtual = 58358
+INFO: [runtcl-4] Executing : report_io -file system_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.24 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22131 ; free virtual = 58341
+INFO: [runtcl-4] Executing : report_utilization -file system_top_utilization_placed.rpt -pb system_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.40 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22145 ; free virtual = 58356
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22109 ; free virtual = 58321
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.026 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22044 ; free virtual = 58256
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.026 | TNS=0.000 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 2 Fanout Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 3 Placement Based Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 4 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 4 MultiInst Placement Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 5 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 5 Rewire | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 6 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 6 Critical Cell Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 7 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 7 Fanout Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 8 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 8 Placement Based Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 9 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 9 MultiInst Placement Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 10 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 10 Rewire | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 11 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 11 Critical Cell Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 12 Slr Crossing Optimization
+Phase 12 Slr Crossing Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 13 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 13 Fanout Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 14 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 14 Placement Based Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 15 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 15 MultiInst Placement Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 16 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 16 Rewire | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 17 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 17 Critical Cell Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 18 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 18 DSP Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 19 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 19 BRAM Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 20 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 20 URAM Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 21 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 21 Shift Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 22 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 22 DSP Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 23 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 23 BRAM Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 24 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 24 URAM Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 25 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 25 Shift Register Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 26 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 26 Critical Pin Optimization | Checksum: 1695fdb02
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22037 ; free virtual = 58249
+
+Phase 27 Very High Fanout Optimization
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin i_system_wrapper/system_i/openwifi_ip/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin i_system_wrapper/system_i/openwifi_ip/axi_interconnect_2/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-76] Pass 1. Identified 19 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/reset00_out. Replicated 6 times.
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/openofdm_rx_s_axi_i/reset was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg/rst. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/reset01_out. Replicated 4 times.
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/enable0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/openwifi_ip/openofdm_tx_0/inst/openofdm_tx_s_axi_i/reset_int was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/reset02_out. Replicated 5 times.
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/ofdm_decoder_inst/viterbi_inst/U0/a1/obsiagd/obsfkscmirashyyaedpyi/obsfguzt4egzdp3r15ve/obsazzgx3hujx2int22tl4wa/obsnjqkh4eg34wjgupv4jx5la/obsiastp4eg32x3h5la/obsiyohp3xsxh0m/obsaua[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/enable031_out. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/openofdm_rx_0/inst/dot11_i/sync_short_inst/delay_prod_inst/stb_delay_inst/addr. Replicated 2 times.
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values/d_xfer_toggle_s was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/openwifi_ip/axi_dma_1/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_ASYNC_RESET.scndry_resetn_reg_0. Replicated 2 times.
+INFO: [Physopt 32-232] Optimized 7 nets. Created 21 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 7 nets or cells. Created 21 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.026 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22047 ; free virtual = 58259
+Phase 27 Very High Fanout Optimization | Checksum: 106d5f47a
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:26 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22047 ; free virtual = 58259
+
+Phase 28 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 28 Placement Based Optimization | Checksum: 106d5f47a
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:26 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22047 ; free virtual = 58259
+
+Phase 29 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 29 MultiInst Placement Optimization | Checksum: 106d5f47a
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:26 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22047 ; free virtual = 58259
+
+Phase 30 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.026 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.026 | TNS=0.000 |
+Phase 30 Critical Path Optimization | Checksum: 106d5f47a
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:26 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22047 ; free virtual = 58259
+
+Phase 31 BRAM Enable Optimization
+Phase 31 BRAM Enable Optimization | Checksum: 106d5f47a
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:26 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22047 ; free virtual = 58259
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22052 ; free virtual = 58264
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.026 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization          |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Placement Based       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  MultiInst Placement   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Rewire                |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Cell         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Slr Crossing          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout      |          0.000  |          0.000  |           21  |              0  |                     7  |           2  |           1  |  00:00:16  |
+|  BRAM Enable           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                 |          0.000  |          0.000  |           21  |              0  |                     7  |           2  |           4  |  00:00:17  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22052 ; free virtual = 58264
+Ending Physical Synthesis Task | Checksum: 106d5f47a
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:00:28 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22052 ; free virtual = 58264
+INFO: [Common 17-83] Releasing license: Implementation
+160 Infos, 137 Warnings, 3 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:21 ; elapsed = 00:00:37 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22118 ; free virtual = 58330
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22119 ; free virtual = 58331
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22051 ; free virtual = 58307
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21923 ; free virtual = 58296
+INFO: [Common 17-1381] The checkpoint '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 22065 ; free virtual = 58320
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: c4e5a7b3 ConstDB: 0 ShapeSum: 94fda55b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: e379186e
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:45 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21776 ; free virtual = 58032
+Post Restoration Checksum: NetGraph: 1ff6b137 NumContArr: c3826737 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: e379186e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:46 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21793 ; free virtual = 58049
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: e379186e
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:47 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21745 ; free virtual = 58001
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: e379186e
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:47 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21745 ; free virtual = 58001
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c86c8bba
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:04 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21712 ; free virtual = 57968
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.091 | TNS=-0.181 | WHS=-0.402 | THS=-5856.471|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 159e568d8
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:11 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21689 ; free virtual = 57945
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.091 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 155353a7e
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:11 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21684 ; free virtual = 57941
+Phase 2 Router Initialization | Checksum: 21e65678b
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:11 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21684 ; free virtual = 57941
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19b87b12c
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:01:20 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21671 ; free virtual = 57928
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6971
+ Number of Nodes with overlaps = 886
+ Number of Nodes with overlaps = 260
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.194 | TNS=-1.782 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 19a6c343b
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:01:51 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21661 ; free virtual = 57918
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 403
+ Number of Nodes with overlaps = 111
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.308 | TNS=-1.833 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 13dbe415d
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:02:02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21668 ; free virtual = 57925
+Phase 4 Rip-up And Reroute | Checksum: 13dbe415d
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:02:02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21668 ; free virtual = 57925
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+
+Phase 5.1.1.1 Update Timing
+Phase 5.1.1.1 Update Timing | Checksum: 1186cae36
+
+Time (s): cpu = 00:04:40 ; elapsed = 00:02:04 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21668 ; free virtual = 57925
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.070 | TNS=-0.136 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.2 Update Timing
+Phase 5.1.1.2 Update Timing | Checksum: 16b6bb06a
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:02:05 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21665 ; free virtual = 57922
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.070 | TNS=-0.135 | WHS=N/A    | THS=N/A    |
+
+Phase 5.1.1 Delay CleanUp | Checksum: 1803e0cab
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:06 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21664 ; free virtual = 57922
+Phase 5.1 TNS Cleanup | Checksum: 1803e0cab
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:06 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21664 ; free virtual = 57922
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1803e0cab
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:02:06 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21664 ; free virtual = 57922
+Phase 5 Delay and Skew Optimization | Checksum: 1803e0cab
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:02:07 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21665 ; free virtual = 57922
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 18fd74072
+
+Time (s): cpu = 00:04:52 ; elapsed = 00:02:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21666 ; free virtual = 57923
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.070 | TNS=-0.135 | WHS=0.034  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 109848c24
+
+Time (s): cpu = 00:04:53 ; elapsed = 00:02:09 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21665 ; free virtual = 57922
+Phase 6 Post Hold Fix | Checksum: 109848c24
+
+Time (s): cpu = 00:04:53 ; elapsed = 00:02:10 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21665 ; free virtual = 57922
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 17bdd265b
+
+Time (s): cpu = 00:05:08 ; elapsed = 00:02:13 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21663 ; free virtual = 57920
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.070 | TNS=-0.135 | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 17bdd265b
+
+Time (s): cpu = 00:05:08 ; elapsed = 00:02:13 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21663 ; free virtual = 57920
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.71006 %
+  Global Horizontal Routing Utilization  = 7.42072 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 74.7748%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 85.2941%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X58Y239 -> INT_L_X58Y239
+West Dir 1x1 Area, Max Cong = 88.2353%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X75Y276 -> INT_R_X75Y276
+   INT_L_X64Y232 -> INT_L_X64Y232
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+
+Phase 8 Route finalize | Checksum: 17bdd265b
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:02:13 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21662 ; free virtual = 57919
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 17bdd265b
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:02:14 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21660 ; free virtual = 57918
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1e2bfeb75
+
+Time (s): cpu = 00:05:13 ; elapsed = 00:02:18 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21662 ; free virtual = 57919
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21639 ; free virtual = 57896
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.072. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 9163ce9d
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21666 ; free virtual = 57923
+Phase 11 Incr Placement Change | Checksum: 1e2bfeb75
+
+Time (s): cpu = 00:06:41 ; elapsed = 00:02:54 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21666 ; free virtual = 57923
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 1454ef99f
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:03:10 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21609 ; free virtual = 57867
+Post Restoration Checksum: NetGraph: d35c824b NumContArr: 43ec4c5 Constraints: 0 Timing: 0
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: d79b4710
+
+Time (s): cpu = 00:07:00 ; elapsed = 00:03:13 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21591 ; free virtual = 57848
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: d79b4710
+
+Time (s): cpu = 00:07:01 ; elapsed = 00:03:13 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21543 ; free virtual = 57800
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: 16cfa3737
+
+Time (s): cpu = 00:07:01 ; elapsed = 00:03:14 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21543 ; free virtual = 57800
+ Number of Nodes with overlaps = 0
+
+Phase 13.4 Update Timing
+Phase 13.4 Update Timing | Checksum: 172593757
+
+Time (s): cpu = 00:07:54 ; elapsed = 00:03:29 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21478 ; free virtual = 57735
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.019 | TNS=-0.045 | WHS=-0.402 | THS=-5823.918|
+
+
+Phase 13.5 Update Timing for Bus Skew
+
+Phase 13.5.1 Update Timing
+Phase 13.5.1 Update Timing | Checksum: 1658f0157
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:03:36 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21450 ; free virtual = 57708
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.019 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 13.5 Update Timing for Bus Skew | Checksum: 1bde42a94
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:03:36 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21445 ; free virtual = 57703
+Phase 13 Router Initialization | Checksum: 1a8c0dbbf
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:03:37 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21456 ; free virtual = 57713
+
+Phase 14 Initial Routing
+Phase 14 Initial Routing | Checksum: 17ad4384a
+
+Time (s): cpu = 00:08:31 ; elapsed = 00:03:38 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21446 ; free virtual = 57704
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+ Number of Nodes with overlaps = 300
+ Number of Nodes with overlaps = 190
+ Number of Nodes with overlaps = 81
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.102 | TNS=-0.678 | WHS=N/A    | THS=N/A    |
+
+Phase 15.1 Global Iteration 0 | Checksum: 2287065a3
+
+Time (s): cpu = 00:09:06 ; elapsed = 00:03:57 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21444 ; free virtual = 57701
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 807
+ Number of Nodes with overlaps = 258
+ Number of Nodes with overlaps = 156
+ Number of Nodes with overlaps = 87
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.055 | TNS=-0.095 | WHS=N/A    | THS=N/A    |
+
+Phase 15.2 Global Iteration 1 | Checksum: 225bded2e
+
+Time (s): cpu = 00:09:31 ; elapsed = 00:04:15 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+
+Phase 15.3 Global Iteration 2
+ Number of Nodes with overlaps = 732
+ Number of Nodes with overlaps = 165
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.016 | TNS=-0.016 | WHS=N/A    | THS=N/A    |
+
+Phase 15.3 Global Iteration 2 | Checksum: 15ef31692
+
+Time (s): cpu = 00:09:54 ; elapsed = 00:04:33 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21444 ; free virtual = 57702
+
+Phase 15.4 Global Iteration 3
+ Number of Nodes with overlaps = 569
+ Number of Nodes with overlaps = 142
+ Number of Nodes with overlaps = 51
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.014  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 15.4 Global Iteration 3 | Checksum: 19d53ba1a
+
+Time (s): cpu = 00:10:08 ; elapsed = 00:04:43 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+Phase 15 Rip-up And Reroute | Checksum: 19d53ba1a
+
+Time (s): cpu = 00:10:08 ; elapsed = 00:04:43 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 TNS Cleanup
+
+Phase 16.1.1 Delay CleanUp
+Phase 16.1.1 Delay CleanUp | Checksum: 19d53ba1a
+
+Time (s): cpu = 00:10:08 ; elapsed = 00:04:43 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+Phase 16.1 TNS Cleanup | Checksum: 19d53ba1a
+
+Time (s): cpu = 00:10:08 ; elapsed = 00:04:43 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 19d53ba1a
+
+Time (s): cpu = 00:10:08 ; elapsed = 00:04:43 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+Phase 16 Delay and Skew Optimization | Checksum: 19d53ba1a
+
+Time (s): cpu = 00:10:09 ; elapsed = 00:04:43 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21443 ; free virtual = 57700
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: 1dbb5295a
+
+Time (s): cpu = 00:10:17 ; elapsed = 00:04:46 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21444 ; free virtual = 57702
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.138  | TNS=0.000  | WHS=0.034  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 11194a192
+
+Time (s): cpu = 00:10:17 ; elapsed = 00:04:46 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21444 ; free virtual = 57702
+Phase 17 Post Hold Fix | Checksum: 11194a192
+
+Time (s): cpu = 00:10:17 ; elapsed = 00:04:46 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21444 ; free virtual = 57702
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 1951fddda
+
+Time (s): cpu = 00:10:32 ; elapsed = 00:04:49 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21452 ; free virtual = 57709
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.138  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 1951fddda
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:04:49 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21452 ; free virtual = 57709
+
+Phase 19 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.74593 %
+  Global Horizontal Routing Utilization  = 7.44891 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 19 Route finalize | Checksum: 1951fddda
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:04:50 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21450 ; free virtual = 57708
+
+Phase 20 Verifying routed nets
+
+ Verification completed successfully
+Phase 20 Verifying routed nets | Checksum: 1951fddda
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:04:50 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21449 ; free virtual = 57706
+
+Phase 21 Depositing Routes
+Phase 21 Depositing Routes | Checksum: 127dec9bf
+
+Time (s): cpu = 00:10:38 ; elapsed = 00:04:54 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21450 ; free virtual = 57707
+
+Phase 22 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.142  | TNS=0.000  | WHS=0.035  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 22 Post Router Timing | Checksum: d58d97f3
+
+Time (s): cpu = 00:11:21 ; elapsed = 00:05:03 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21534 ; free virtual = 57791
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:11:22 ; elapsed = 00:05:03 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21838 ; free virtual = 58095
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+193 Infos, 237 Warnings, 3 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:11:31 ; elapsed = 00:05:08 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21838 ; free virtual = 58095
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21838 ; free virtual = 58096
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21769 ; free virtual = 58072
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21597 ; free virtual = 58057
+INFO: [Common 17-1381] The checkpoint '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21776 ; free virtual = 58085
+INFO: [runtcl-4] Executing : report_drc -file system_top_drc_routed.rpt -pb system_top_drc_routed.pb -rpx system_top_drc_routed.rpx
+Command: report_drc -file system_top_drc_routed.rpt -pb system_top_drc_routed.pb -rpx system_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21750 ; free virtual = 58059
+INFO: [runtcl-4] Executing : report_methodology -file system_top_methodology_drc_routed.rpt -pb system_top_methodology_drc_routed.pb -rpx system_top_methodology_drc_routed.rpx
+Command: report_methodology -file system_top_methodology_drc_routed.rpt -pb system_top_methodology_drc_routed.pb -rpx system_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:36 ; elapsed = 00:00:20 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21321 ; free virtual = 57631
+INFO: [runtcl-4] Executing : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb -rpx system_top_power_routed.rpx
+Command: report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb -rpx system_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+205 Infos, 238 Warnings, 3 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21255 ; free virtual = 57582
+INFO: [runtcl-4] Executing : report_route_status -file system_top_route_status.rpt -pb system_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_top_timing_summary_routed.rpt -pb system_top_timing_summary_routed.pb -rpx system_top_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_top_bus_skew_routed.rpt -pb system_top_bus_skew_routed.pb -rpx system_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035i'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+221 Infos, 239 Warnings, 3 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21213 ; free virtual = 57544
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21128 ; free virtual = 57504
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 20955 ; free virtual = 57489
+INFO: [Common 17-1381] The checkpoint '/home/sdr/workspace/ns/openwifi/openwifi-hw/boards/adrv9361z7035/openwifi_adrv9361z7035/openwifi_adrv9361z7035.runs/impl_1/system_top_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 4140.477 ; gain = 0.000 ; free physical = 21136 ; free virtual = 57519
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file system_top_timing_summary_postroute_physopted.rpt -pb system_top_timing_summary_postroute_physopted.pb -rpx system_top_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_top_bus_skew_postroute_physopted.rpt -pb system_top_bus_skew_postroute_physopted.pb -rpx system_top_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 21:56:43 2020...

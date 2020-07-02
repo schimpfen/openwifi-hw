@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Fri Jun 19 10:19:52 2020
+| Date             : Wed Jul  1 21:55:58 2020
 | Host             : XPS running 64-bit Ubuntu 16.04.6 LTS
 | Command          : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb -rpx system_top_power_routed.rpx
 | Design           : system_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.533        |
+| Total On-Chip Power (W)  | 4.576        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 4.330        |
+| Dynamic (W)              | 4.373        |
 | Device Static (W)        | 0.203        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 91.6         |
-| Junction Temperature (C) | 33.4         |
+| Max Ambient (C)          | 91.5         |
+| Junction Temperature (C) | 33.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.423 |       14 |       --- |             --- |
-| Slice Logic              |     0.346 |   129960 |       --- |             --- |
-|   LUT as Logic           |     0.257 |    43456 |    171900 |           25.28 |
-|   CARRY4                 |     0.036 |     4135 |     54650 |            7.57 |
-|   Register               |     0.036 |    71449 |    343800 |           20.78 |
-|   Others                 |     0.011 |     5381 |       --- |             --- |
+| Clocks                   |     0.434 |       14 |       --- |             --- |
+| Slice Logic              |     0.356 |   136472 |       --- |             --- |
+|   LUT as Logic           |     0.265 |    44946 |    171900 |           26.15 |
+|   Register               |     0.037 |    74621 |    343800 |           21.70 |
+|   CARRY4                 |     0.037 |     4249 |     54650 |            7.77 |
+|   Others                 |     0.011 |     5855 |       --- |             --- |
+|   LUT as Shift Register  |     0.003 |     1720 |     70400 |            2.44 |
 |   LUT as Distributed RAM |     0.003 |      629 |     70400 |            0.89 |
-|   LUT as Shift Register  |     0.002 |     1229 |     70400 |            1.75 |
-|   F7/F8 Muxes            |    <0.001 |      670 |    218600 |            0.31 |
-| Signals                  |     0.407 |    99063 |       --- |             --- |
-| Block RAM                |     0.128 |     94.5 |       500 |           18.90 |
-| DSPs                     |     0.121 |      133 |       900 |           14.78 |
+|   F7/F8 Muxes            |    <0.001 |      813 |    218600 |            0.37 |
+| Signals                  |     0.411 |   103383 |       --- |             --- |
+| Block RAM                |     0.137 |    105.5 |       500 |           21.10 |
+| DSPs                     |     0.129 |      133 |       900 |           14.78 |
 | I/O                      |     0.213 |      250 |       250 |          100.00 |
 | GTX                      |     1.140 |        4 |         8 |           50.00 |
 | PS7                      |     1.552 |        1 |       --- |             --- |
 | Static Power             |     0.203 |          |           |                 |
-| Total                    |     4.533 |          |           |                 |
+| Total                    |     4.576 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       0.950 |     1.605 |       1.562 |      0.043 |
+| Vccint    |       0.950 |     1.650 |       1.607 |      0.043 |
 | Vccaux    |       1.800 |     0.067 |       0.028 |      0.039 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.005 |       0.004 |      0.001 |
@@ -165,7 +165,7 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| system_top                  |     4.330 |
+| system_top                  |     4.373 |
 |   dbg_hub                   |     0.004 |
 |     inst                    |     0.004 |
 |       BSCANID.u_xsdbm_id    |     0.004 |
@@ -179,27 +179,27 @@ Table of Contents
 |   gpio_bd_IOBUF[7]_inst     |     0.001 |
 |   gpio_bd_IOBUF[8]_inst     |     0.001 |
 |   gpio_bd_IOBUF[9]_inst     |     0.001 |
-|   i_system_wrapper          |     4.289 |
-|     system_i                |     4.289 |
-|       axi_ad9361            |     0.676 |
+|   i_system_wrapper          |     4.294 |
+|     system_i                |     4.294 |
+|       axi_ad9361            |     0.673 |
 |       axi_ad9361_adc_dma    |     0.007 |
 |       axi_ad9361_dac_dma    |     0.008 |
 |       axi_ad9361_dac_fifo   |     0.002 |
-|       axi_cpu_interconnect  |     0.005 |
+|       axi_cpu_interconnect  |     0.006 |
 |       axi_gpreg             |     0.003 |
 |       axi_hp1_interconnect  |     0.008 |
 |       axi_hp2_interconnect  |     0.007 |
 |       axi_iic_main          |     0.002 |
 |       axi_pz_xcvrlb         |     1.152 |
 |       axi_sysid_0           |     0.001 |
-|       openwifi_ip           |     0.842 |
+|       openwifi_ip           |     0.849 |
 |       sys_ps7               |     1.565 |
-|       util_ad9361_adc_fifo  |     0.005 |
+|       util_ad9361_adc_fifo  |     0.006 |
 |       util_ad9361_adc_pack  |     0.003 |
 |       util_ad9361_dac_upack |     0.002 |
-|   u_ila_0                   |     0.010 |
-|     inst                    |     0.010 |
-|       ila_core_inst         |     0.010 |
+|   u_ila_0                   |     0.048 |
+|     inst                    |     0.048 |
+|       ila_core_inst         |     0.048 |
 +-----------------------------+-----------+
 
 

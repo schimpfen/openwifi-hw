@@ -1323,6 +1323,12 @@
       }
     },
     "interface_nets": {
+      "S00_AXI_1": {
+        "interface_ports": [
+          "S00_AXI",
+          "s00_entry_pipeline/s_axi"
+        ]
+      },
       "s00_entry_pipeline_m_axi": {
         "interface_ports": [
           "s00_entry_pipeline/m_axi",
@@ -1339,12 +1345,6 @@
         "interface_ports": [
           "s00_nodes/S_SC_AR",
           "s00_axi2sc/M_SC_AR"
-        ]
-      },
-      "S00_AXI_1": {
-        "interface_ports": [
-          "S00_AXI",
-          "s00_entry_pipeline/s_axi"
         ]
       },
       "m00_exit_pipeline_m_axi": {

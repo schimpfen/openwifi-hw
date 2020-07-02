@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Fri Jun 19 09:12:02 2020
+//Date        : Wed Jul  1 21:21:29 2020
 //Host        : XPS running 64-bit Ubuntu 16.04.6 LTS
 //Command     : generate_target system.bd
 //Design      : system
@@ -3077,6 +3077,7 @@ module openwifi_ip_imp_ZYLLT2
   output tx_itrpt0;
   output tx_itrpt1;
 
+  wire [31:0]IQ_Adder_0_iq_strOut;
   wire [31:0]S00_AXI_6_ARADDR;
   wire [1:0]S00_AXI_6_ARBURST;
   wire [3:0]S00_AXI_6_ARCACHE;
@@ -3441,6 +3442,7 @@ module openwifi_ip_imp_ZYLLT2
   wire rx_intf_0_m00_axis_TREADY;
   wire rx_intf_0_m00_axis_TVALID;
   wire [31:0]rx_intf_0_sample;
+  wire [31:0]rx_intf_0_sample_2;
   wire rx_intf_0_sample_strobe;
   wire s_axi_lite_aclk_1;
   wire sys_ps7_FCLK_RESET2_N;
@@ -3657,6 +3659,12 @@ module openwifi_ip_imp_ZYLLT2
   assign sys_ps7_M_AXI_GP1_WVALID = S00_AXI_wvalid;
   assign tx_itrpt0 = openwifi_ip_tx_itrpt0;
   assign tx_itrpt1 = openwifi_ip_tx_itrpt1;
+  system_IQ_Adder_0_0 IQ_Adder_0
+       (.clk(s_axi_lite_aclk_1),
+        .en(rx_intf_0_sample_strobe),
+        .iq_str0(rx_intf_0_sample),
+        .iq_str1(rx_intf_0_sample_2),
+        .iq_strOut(IQ_Adder_0_iq_strOut));
   system_axi_dma_0_0 axi_dma_0
        (.axi_resetn(sys_rstgen1_peripheral_aresetn),
         .m_axi_mm2s_aclk(s_axi_lite_aclk_1),
@@ -4271,7 +4279,7 @@ module openwifi_ip_imp_ZYLLT2
         .s00_axi_wready(axi_interconnect_1_M05_AXI_WREADY),
         .s00_axi_wstrb(axi_interconnect_1_M05_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_1_M05_AXI_WVALID),
-        .sample_in(rx_intf_0_sample),
+        .sample_in(IQ_Adder_0_iq_strOut),
         .sample_in_strobe(rx_intf_0_sample_strobe));
   system_openofdm_tx_0_0 openofdm_tx_0
        (.bram_addr(openofdm_tx_0_bram_addr),
@@ -4363,6 +4371,7 @@ module openwifi_ip_imp_ZYLLT2
         .s00_axis_tvalid(axi_dma_1_M_AXIS_MM2S_TVALID),
         .s2mm_intr(openwifi_ip_s2mm_introut),
         .sample(rx_intf_0_sample),
+        .sample_2(rx_intf_0_sample_2),
         .sample_strobe(rx_intf_0_sample_strobe),
         .tsf_pulse_1M(xpu_0_tsf_pulse_1M),
         .tsf_runtime_val(xpu_0_tsf_runtime_val));
@@ -4448,10 +4457,10 @@ module openwifi_ip_imp_ZYLLT2
         .tx_try_complete(xpu_0_tx_try_complete),
         .wea_from_xpu(xpu_0_wea));
   system_xlslice_0_0 xlslice_0
-       (.Din(rx_intf_0_sample),
+       (.Din(IQ_Adder_0_iq_strOut),
         .Dout(xlslice_0_Dout));
   system_xlslice_1_0 xlslice_1
-       (.Din(rx_intf_0_sample),
+       (.Din(IQ_Adder_0_iq_strOut),
         .Dout(xlslice_1_Dout));
   system_xpu_0_0 xpu_0
        (.ack_tx_flag(xpu_0_ack_tx_flag),
@@ -6261,7 +6270,7 @@ module s02_couplers_imp_5VTEQI
         .s_axi_wvalid(s02_couplers_to_auto_us_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=73,numReposBlks=44,numNonXlnxBlks=18,numHierBlks=29,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=74,numReposBlks=45,numNonXlnxBlks=19,numHierBlks=29,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (ddr_addr,
     ddr_ba,
